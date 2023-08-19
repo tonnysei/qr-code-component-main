@@ -1,3 +1,12 @@
+:root {
+  /* Colors */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +16,7 @@
 
 body {
   font-family: Outfit;
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--Light-gray);
 }
 
 .container {
@@ -23,11 +32,11 @@ section {
   flex-direction: column;
   width: 20rem;
   padding: 1rem;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--White);
   border-radius: 1rem;
   gap: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 8px 80px -16px hsla(218, 44%, 22%, 0.2)
+  box-shadow: 0 8px 80px -16px var(--Dark-blue);
 }
 
 .img-container {
@@ -54,7 +63,7 @@ section {
 
 .description {
   text-align: center;
-  color: hsl(220, 15%, 55%);
+  color: var(--Grayish-blue);
 }
 
 .attribution { font-size: 11px; text-align: center; }
